@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "react",
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "lib": [
+    "dom",
+    "esnext"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ],
+  "include": [
+    "src/main",
+    "src/renderer"
+  ]
+}
