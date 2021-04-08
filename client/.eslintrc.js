@@ -20,7 +20,8 @@ module.exports = {
         'ecmaFeatures': {
             'jsx': true
         },
-        'ecmaVersion': 12,
+        'project': './client/tsconfig.json',
+        'ecmaVersion': 2018,
         'sourceType': 'module'
     },
     'plugins': [

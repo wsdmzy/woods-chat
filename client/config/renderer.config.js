@@ -52,6 +52,16 @@ const rendererConfig = {
           }
         ]
       },
+      {
+        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8192,
+            name: 'images/[name].[ext]'
+          }
+        }
+      },
       { test: /\.tsx?$/, loader: "ts-loader" },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
@@ -60,7 +70,7 @@ const rendererConfig = {
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
     alias: {
       '@renderer': path.resolve(ROOT_DIR, 'src/renderer')
-    }
+    },
   },
   devtool: "source-map",
   mode: 'development',

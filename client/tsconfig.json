@@ -4,7 +4,12 @@
     "target": "es2016",
     "jsx": "react",
     "sourceMap": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@renderer/*": ["src/renderer/*"],
+      "@main/*": ["src/main/*"],
+    },
   },
   "lib": [
     "dom",

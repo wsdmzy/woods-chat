@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import Hello from './components/Hello';
+import App from '@renderer/pages/Login';
 
 ReactDOM.render(
-  <Hello name="TypeScript" enthusiasmLevel={10} />,
+  <App />,
   document.getElementById('root') as HTMLElement
 );
